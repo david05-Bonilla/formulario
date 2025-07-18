@@ -1,39 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Deposito bancario</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    <h1 class="cuenta">Cuenta:</h1>
-    <h1 class="numero">123456789</h1>
-    <h3 class="deposito">deposito</h3>
-    <form action="">
-        <label for="resive">ingrese el numero de cuenta al que depositara:</label><br>
-        <input type="number" placeholder="ingrese el numero aqui">
-        <br><br>
-        <label for="cantidad">ingrese la cantidad que desea depositar:</label><br>
-        <input type="number" placeholder="ingrese la cantidad aqui">
-        <br><br>
-        <label for="pin">ingrese su pin:</label><br>
-        <input type="password" placeholder="ingrese su pin aqui">
+    <header>
+        <h1 class="cuenta">Cuenta:</h1>
+        <h1 class="numero">123456789</h1>
+    </header>
 
-        <br><br>
-        <label for="pin">confirme su pin:</label><br>
-        <input type="password" placeholder="confirme su pin aqui">
+    <main>
+        <section>
+            <h3 class="deposito">deposito</h3>
+            <form action="">
+                <div>
+                    <label for="resive">ingrese el numero de cuenta al que depositara:</label><br>
+                    <input type="number" placeholder="ingrese el numero aqui">
+                    <br><br>
+                </div>
 
-        <br><br>
-        <label for="confirmante">¿Decea confirmación de retiro?</label><br>
-        <input type="radio" id="si" name="opcion" value="si">
-        <label for="si desea">si</label>
+                <div>
+                    <label for="cantidad">ingrese la cantidad que desea depositar:</label><br>
+                    <input type="number" placeholder="ingrese la cantidad aqui">
+                    <br><br>
+                </div>
 
-        <input type="radio" id="no" name="opcion" value="no">
-        <label for="no desea">no</label><br><br>
-        <button>depositar</button>
-        
-    </form>
+                <div>
+                    <label for="pin">ingrese su pin:</label><br>
+                    <input type="password" placeholder="ingrese su pin aqui">
+                    <br><br>
+                </div>
 
+                <div>
+                    <label for="pin">confirme su pin:</label><br>
+                    <input type="password" placeholder="confirme su pin aqui">
+                    <br><br>
+                </div>
+
+                <fieldset>
+                    <legend>¿Desea confirmación de retiro?</legend>
+                    <input type="radio" id="si" name="opcion" value="si">
+                    <label for="si desea">si</label>
+
+                    <input type="radio" id="no" name="opcion" value="no">
+                    <label for="no desea">no</label><br>
+                </fieldset>
+
+            </form>
+
+            <form action="Realizado.html">
+                <button type="submit">Depositar</button>
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>
